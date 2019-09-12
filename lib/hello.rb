@@ -1,9 +1,9 @@
 require 'pry'
 
 def hello_t(array)
-  binding.pry
   if block_given?
     i = 0
+    binding.pry
     while i < array.length
       yield(array[i])
       i+= 1
