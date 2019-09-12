@@ -1,15 +1,16 @@
-# def hello_t(array)
-#   if block_given?
-#     i = 0
-#     while i < array.length
-#       yield(array[i])
-#       i+= 1
-#     end
-#   else
-#     puts "Hey! No block was given!"
-#   end
-#   array
-# end
+def hello_t(array)
+  binding.pry
+  if block_given?
+    i = 0
+    while i < array.length
+      yield(array[i])
+      i+= 1
+    end
+  else
+    puts "Hey! No block was given!"
+  end
+  array
+end
 
 
 # call your method here!
@@ -20,14 +21,14 @@
 # end
 
 
-arr = ["Tim", "Tom", "Jim"]
+# arr = ["Tim", "Tom", "Jim"]
 
-arr.each do |name|
-  puts "Hi #{name}!"
-end 
+# arr.each do |name|
+#   puts "Hi #{name}!"
+# end 
 
-i = 0
-while i < array.length
- yield(array[i])
- i+= 1
-end
+# i = 0
+# while i < arr.length
+# yield(arr[i])
+# i+= 1
+# end
