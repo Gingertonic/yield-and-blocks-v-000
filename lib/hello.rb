@@ -18,3 +18,10 @@ end
 #     puts "Hi, #{name}"
 #   end
 # end
+
+
+arr = ["Tim", "Tom", "Jim"]
+
+arr.each do
+  
+end 
